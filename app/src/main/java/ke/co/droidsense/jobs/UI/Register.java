@@ -223,7 +223,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
     //Transitioning to MainActivity.
     private void createTransitionToMainActivity() {
         //Create Explicit intent.
-        Intent mainActivityTransitionIntent = new Intent( Register.this, MainActivity.class );
+        Intent mainActivityTransitionIntent = new Intent( Register.this, Login.class );
         startActivity( mainActivityTransitionIntent );
     }
 }
