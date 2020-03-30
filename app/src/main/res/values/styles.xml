@@ -8,12 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- No ActionBar Theme -->
+    <!-- No ActionBar Material Theme -->
     <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/blueGrey900</item>
         <item name="colorPrimaryDark">@color/blueGrey500</item>
         <item name="colorAccent">@color/dullBlack</item>
+    </style>
+
+    <!-- ActionBar Material Theme -->
+    <style name="MaterialActionBarTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blueGrey900</item>
+        <item name="colorPrimaryDark">@color/blueGrey500</item>
+        <item name="colorAccent">@color/whiteTheme</item>
     </style>
 
 </resources>

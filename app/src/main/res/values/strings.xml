@@ -1,12 +1,19 @@
 <resources>
     <string name="app_name">Jobs</string>
     <string name="register_header">Create Account</string>
-    <string name="email_hint">Email</string>
-    <string name="phone_hint">Phone</string>
-    <string name="password_hint">Password</string>
-    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="email_hint"> Email</string>
+    <string name="phone_hint"> Phone</string>
+    <string name="password_hint"> Password</string>
+    <string name="confirm_password_hint"> Confirm Password</string>
     <string name="register_button_text">Register</string>
-    <string name="login_textView_text">Have an account? Log in</string>
+    <string name="login_textView_text"> Have an account? Log in</string>
     <string name="login_button">Login</string>
-    <string name="register_textView_text">Don\'t have account? Register</string>
+    <string name="register_textView_text"> Don\'t have account? Register</string>
+    <string name="main_activity_actionBar_header">Jobs</string>
+    <string name="new_job_actionBar_header">Create Job</string>
+    <string name="job_title_hint"> Job Title</string>
+    <string name="job_description_hint"> Maximum 240 character description</string>
+    <string name="add_new_job_text">Add new Job</string>
+    <string name="job_budget_hint"> Job Budget</string>
+    <string name="add_new_job_header_text">New Job</string>
 </resources>
