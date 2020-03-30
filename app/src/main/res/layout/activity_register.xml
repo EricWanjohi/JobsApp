@@ -31,6 +31,26 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/registration_full_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name_hint"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/padding16dp"
+                android:layout_margin="@dimen/margin4dp"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/registration_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
@@ -132,9 +152,7 @@
             android:textSize="16sp"
             android:text="@string/login_textView_text"
             android:textColor="@android:color/black"
-            android:gravity="center"
-            android:padding="@dimen/padding16dp"
-            android:layout_margin="@dimen/margin4dp"/>
+            android:gravity="center"/>
 
 
 

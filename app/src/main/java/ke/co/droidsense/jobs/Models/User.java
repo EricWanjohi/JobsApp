@@ -17,15 +17,15 @@ public class User {
     }
 
     //Constructor.
-    public User(String full_name, String display_name, String email, String phone, String password, String confirm_password, String image_url, String push_id) {
+    public User(String full_name, String email, String phone, String password, String confirm_password) {
         this.full_name = full_name;
-        this.display_name = display_name;
+//        this.display_name = display_name;
         this.email = email;
         this.phone = phone;
         this.password = password;
         this.confirm_password = confirm_password;
-        this.image_url = image_url;
-        this.push_id = push_id;
+//        this.image_url = image_url;
+//        this.push_id = push_id;
     }
 
     //Getters and Setters.

@@ -16,4 +16,5 @@
     <string name="add_new_job_text">Add new Job</string>
     <string name="job_budget_hint"> Job Budget</string>
     <string name="add_new_job_header_text">New Job</string>
+    <string name="full_name_hint">Full Name</string>
 </resources>

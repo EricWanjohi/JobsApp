@@ -2,6 +2,7 @@ package ke.co.droidsense.jobs.Models;
 
 public class Job {
     //Member Variables
+    private int job_id;
     private String job_title;
     private String job_description;
     private int job_budget;
@@ -13,7 +14,8 @@ public class Job {
     }
 
     //Constructor.
-    public Job(String job_title, String job_description, int job_budget, String job_due_date) {
+    public Job(int job_id, String job_title, String job_description, int job_budget, String job_due_date) {
+        this.job_id = job_id;
         this.job_title = job_title;
         this.job_description = job_description;
         this.job_budget = job_budget;
@@ -51,5 +53,13 @@ public class Job {
 
     public void setJob_due_date(String job_due_date) {
         this.job_due_date = job_due_date;
+    }
+
+    public int getJob_id() {
+        return job_id;
+    }
+
+    public void setJob_id(int job_id) {
+        this.job_id = job_id;
     }
 }
