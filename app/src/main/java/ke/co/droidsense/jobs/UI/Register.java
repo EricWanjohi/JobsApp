@@ -88,7 +88,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                 //Check if user is null.
                 if (firebaseUser != null){
                     //Create Intent to transition to Main Activity
-                    Intent mainActivityIntent = new Intent( Register.this, MainActivity.class );
+                    Intent mainActivityIntent = new Intent( Register.this, JobsList.class );
                     mainActivityIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
                     startActivity( mainActivityIntent );
                     finish();
@@ -215,15 +215,15 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             //Case Login Text.
             case R.id.login_textView:
                 //Transition to Login Activity
-                createTransitionToMainActivity();
+                createTransitionToLoginActivity();
                 break;
         }
     }
 
-    //Transitioning to MainActivity.
-    private void createTransitionToMainActivity() {
+    //Transitioning to JobsList.
+    private void createTransitionToLoginActivity() {
         //Create Explicit intent.
-        Intent mainActivityTransitionIntent = new Intent( Register.this, Login.class );
-        startActivity( mainActivityTransitionIntent );
+        Intent loginActivityTransitionIntent = new Intent( Register.this, Login.class );
+        startActivity( loginActivityTransitionIntent );
     }
 }

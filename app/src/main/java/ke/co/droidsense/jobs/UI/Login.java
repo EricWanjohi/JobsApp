@@ -52,27 +52,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         ButterKnife.bind( this );
 
         //AuthStateListener
-        //getAuthStateListener();
-        //Get Auth instance.
-        firebaseAuth = FirebaseAuth.getInstance();
-
-        //AuthStateListener.
-        authStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                //Create User object.
-                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-
-                //Check if user is null.
-                if (firebaseUser != null){
-                    //Create new Intent
-                    Intent loginIntent = new Intent( Login.this, MainActivity.class );
-                    loginIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
-                    startActivity( loginIntent );
-                    finish();
-                }
-            }
-        };
+        getAuthStateListener();
 
         //Set Click Listeners.
         register_textView.setOnClickListener( this );
@@ -83,12 +63,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private void getUserStrings() {
         email = email_input.getEditText().getText().toString().trim();
         password = password_input.getEditText().getText().toString().trim();
-    }
-
-    //Validate Inputs.
-    private void validateInputs(String email, String password){
-        validEmail = validateEmail( email );
-        validPassword = validatePassWord( password );
     }
 
     //Validate Email.
@@ -132,7 +106,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 //Check if user is null.
                 if (firebaseUser != null){
                     //Create new Intent
-                    Intent loginIntent = new Intent( Login.this, MainActivity.class );
+                    Intent loginIntent = new Intent( Login.this, JobsList.class );
                     loginIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
                     startActivity( loginIntent );
                     finish();
@@ -147,7 +121,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         switch (view.getId()){
             //Case Login Button.
             case R.id.login_button:
-                loginUser(email, password);
+                loginUser();
                 break;
 
             //Case Register Text.
@@ -175,12 +149,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     }
 
     //Login user
-    private void loginUser(String email, String password) {
+    private void loginUser() {
         //Get user input String
         getUserStrings();
 
         //Get Validation.
-        validateInputs( email, password );
+//        validateInputs( email, password );
+        validEmail = validateEmail( email );
+        validPassword = validatePassWord( password );
 
         //Check validity.
         if (!validEmail || !validPassword) return;
@@ -205,6 +181,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         Toast.makeText( this, "Logging in as " + email_input.getEditText().getText().toString().trim(), Toast.LENGTH_SHORT ).show();
     }
 
+    //transition To Register Activity
     private void transitionToRegisterActivity() {
         //Create Explicit intent.
         Intent registerActivityIntent = new Intent( Login.this, Register.class );

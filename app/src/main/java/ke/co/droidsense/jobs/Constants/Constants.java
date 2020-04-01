@@ -6,4 +6,5 @@ public class Constants {
     public static final String JobsPosted = "Posted Jobs";
     public static final String JobsApplied = "Applied Jobs";
     public static final String SEARCHED_JOBS_QUERY = "";
+    public static final String NEW_JOBS = "Jobs List";
 }

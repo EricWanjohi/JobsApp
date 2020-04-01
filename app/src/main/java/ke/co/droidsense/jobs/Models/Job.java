@@ -5,7 +5,7 @@ public class Job {
     private int job_id;
     private String job_title;
     private String job_description;
-    private int job_budget;
+    private String job_budget;
     private String job_due_date;
 
     //Empty Constructor.
@@ -14,12 +14,12 @@ public class Job {
     }
 
     //Constructor.
-    public Job(int job_id, String job_title, String job_description, int job_budget, String job_due_date) {
-        this.job_id = job_id;
+    public Job(String job_title, String job_description, String job_budget) {
+//        this.job_id = job_id;
         this.job_title = job_title;
         this.job_description = job_description;
         this.job_budget = job_budget;
-        this.job_due_date = job_due_date;
+//        this.job_due_date = job_due_date;
     }
 
     //Getters and Setters.
@@ -39,11 +39,11 @@ public class Job {
         this.job_description = job_description;
     }
 
-    public int getJob_budget() {
+    public String getJob_budget() {
         return job_budget;
     }
 
-    public void setJob_budget(int job_budget) {
+    public void setJob_budget(String job_budget) {
         this.job_budget = job_budget;
     }
 
