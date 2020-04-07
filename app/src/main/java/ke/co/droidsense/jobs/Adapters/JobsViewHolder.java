@@ -42,6 +42,7 @@ public class JobsViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     //Handle Click Events.
     @Override
     public void onClick(View clickedView) {
+        //
 
     }
 }

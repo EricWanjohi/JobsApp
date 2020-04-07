@@ -7,6 +7,7 @@ public class Job {
     private String job_description;
     private String job_budget;
     private String job_due_date;
+    private String index;
 
     //Empty Constructor.
     public Job(){
@@ -20,6 +21,7 @@ public class Job {
         this.job_description = job_description;
         this.job_budget = job_budget;
 //        this.job_due_date = job_due_date;
+        this.index = "un_defined";
     }
 
     //Getters and Setters.
@@ -61,5 +63,13 @@ public class Job {
 
     public void setJob_id(int job_id) {
         this.job_id = job_id;
+    }
+
+    public String getIndex() {
+        return index;
+    }
+
+    public void setIndex(String index) {
+        this.index = index;
     }
 }

@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 import ke.co.droidsense.jobs.R;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
-    //Member Variables.
+
     //Views.
     @BindView( R.id.email_input ) TextInputLayout email_input;
     @BindView( R.id.password_input ) TextInputLayout password_input;
