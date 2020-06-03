@@ -9,12 +9,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".UI.JobDetails"
+            android:label="@string/title_activity_job_details"
+            android:parentActivityName=".UI.JobsList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.droidsense.jobs.UI.JobsList" />
+        </activity>
+        <activity
+            android:name=".UI.Settings"
+            android:label="@string/title_activity_settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.JobsList" />
+        </activity>
+        <activity
+            android:name=".UI.NewJob"
+            android:label="@string/new_job_actionBar_header"
+            android:theme="@style/MaterialActionBarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.JobsList" />
+        </activity>
+        <activity
+            android:name=".UI.Register"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".UI.Login"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.JobsList"
+            android:label="@string/main_activity_actionBar_header">
+
         </activity>
     </application>
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding16dp">16dp</dimen>
+    <dimen name="margin4dp">4dp</dimen>
+    <dimen name="padding6dp">6dp</dimen>
+    <dimen name="padding8dp">8dp</dimen>
+    <dimen name="margin6dp">6dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

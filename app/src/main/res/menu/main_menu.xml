@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Main Activity Menu Items   -->
+    <item
+        android:id="@+id/searchView"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search_black_24dp"/>
+    <item
+        android:id="@+id/add_job"
+        app:showAsAction="always"
+        android:title="@string/add_new_job"
+        android:icon="@drawable/ic_add_black_24dp"/>
+    <item
+        android:id="@+id/logout"
+        app:showAsAction="never"
+        android:title="@string/logout"/>
+    <item
+        android:id="@+id/settings_button"
+        app:showAsAction="never"
+        android:title="@string/settings_button"/>
+</menu>
