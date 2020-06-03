@@ -1,7 +1,15 @@
 package ke.co.droidsense.jobs.Models;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "Jobs")
 public class Job {
     //Member Variables
+    @PrimaryKey(autoGenerate = true)
+    @NonNull
     private int job_id;
     private String job_title;
     private String job_description;
@@ -10,6 +18,7 @@ public class Job {
     private String index;
 
     //Empty Constructor.
+    @Ignore
     public Job(){
         //Required by Firebase and Parceler.
     }

@@ -1,5 +1,11 @@
 package ke.co.droidsense.jobs.Models;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "Users")
 public class User {
     //Member Variables.
     private String full_name;
@@ -9,9 +15,12 @@ public class User {
     private String password;
     private String confirm_password;
     private String image_url;
+    @PrimaryKey
+    @NonNull
     private String push_id;
 
     //Empty constructor.
+    @Ignore
     public User(){
         //Required by Firebase and Parceler...
     }

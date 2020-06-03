@@ -13,7 +13,7 @@
     <color name="blueGrey500">#607D8B</color>
     <color name="blueGrey700">#455A64</color>
     <color name="whiteTheme">#FFFFFF</color>
-    <color name="darkGreen">#32cb00</color>
-    <color name="darkerDark">#018F01</color>
+    <color name="darkGreen">#64DD17</color>
+    <color name="darkerDark">#8BC34A</color>
     <color name="dullBlack">#52000000</color>
 </resources>

@@ -1,20 +1,24 @@
 package ke.co.droidsense.jobs.UI;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ke.co.droidsense.jobs.Constants.Constants;
 import ke.co.droidsense.jobs.Models.Job;
 import ke.co.droidsense.jobs.R;
+import ke.co.droidsense.jobs.util.PersistentFirebaseDb;
 
 public class NewJob extends AppCompatActivity implements View.OnClickListener {
     //Member Variables.
@@ -103,7 +107,7 @@ public class NewJob extends AppCompatActivity implements View.OnClickListener {
 
     //Get Reference
     private void getDatabaseReference() {
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase = PersistentFirebaseDb.getFirebaseDatabase();
         jobsReference = firebaseDatabase.getReference( Constants.NEW_JOBS);
         firebaseAuth = FirebaseAuth.getInstance();
     }

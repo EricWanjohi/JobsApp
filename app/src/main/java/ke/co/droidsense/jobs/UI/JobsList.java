@@ -1,16 +1,10 @@
 package ke.co.droidsense.jobs.UI;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,14 +13,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,7 +30,7 @@ import ke.co.droidsense.jobs.Adapters.JobsViewHolder;
 import ke.co.droidsense.jobs.Constants.Constants;
 import ke.co.droidsense.jobs.Models.Job;
 import ke.co.droidsense.jobs.R;
-import timber.log.Timber;
+import ke.co.droidsense.jobs.util.PersistentFirebaseDb;
 
 public class JobsList extends AppCompatActivity {
     //Member Variables.
@@ -110,7 +106,7 @@ public class JobsList extends AppCompatActivity {
     //Get Reference
     private void getDatabaseReference() {
         //Get Instance.
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase = PersistentFirebaseDb.getFirebaseDatabase();
         firebaseAuth = FirebaseAuth.getInstance();
         jobsListReference = firebaseDatabase.getReference(Constants.NEW_JOBS);
     }
