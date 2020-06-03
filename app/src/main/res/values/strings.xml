@@ -37,4 +37,9 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="settings_button">Settings</string>
     <string name="add_new_job">New Job</string>
+    <string name="title_activity_job_details">Job Details</string>
+    <string name="bid">Bid</string>
+    <string name="job_budget">Job Budget</string>
+    <string name="job_description">Job Description</string>
+    <string name="job_title">Job Title</string>
 </resources>

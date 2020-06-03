@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<androidx.cardview.widget.CardView android:id="@+id/job_item"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:textColor="@color/whiteTheme"
             android:textStyle="bold"
             android:maxLines="2"
-            android:text="Job Title"
+            android:text="@string/job_title"
             android:ellipsize="end"
             android:background="@color/grey_900" />
 
@@ -39,7 +39,7 @@
             android:paddingStart="@dimen/padding16dp"
             android:textStyle="normal"
             android:maxLines="2"
-            android:text="Job Description"
+            android:text="@string/job_description"
             android:ellipsize="end"
             />
 
@@ -58,7 +58,7 @@
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:maxLines="1"
-                android:text="Job Budget"
+                android:text="@string/job_budget"
                 android:paddingStart="@dimen/padding16dp"
                 android:paddingEnd="@dimen/padding16dp"
                 android:ellipsize="end"
@@ -71,7 +71,7 @@
                 android:textSize="14sp"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
-                android:text="Bid"
+                android:text="@string/bid"
                 android:padding="0dp"
                 android:paddingStart="@dimen/padding16dp"
                 android:paddingEnd="@dimen/padding16dp"
