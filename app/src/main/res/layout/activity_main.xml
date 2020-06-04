@@ -10,8 +10,8 @@
         android:id="@+id/jobs_list_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart="@dimen/padding8dp"
-        android:paddingEnd="@dimen/padding8dp"
+        android:paddingStart="@dimen/padding4dp"
+        android:paddingEnd="@dimen/padding4dp"
         android:background="@color/blueGrey700"/>
 
 
