@@ -11,9 +11,10 @@
     <!-- No ActionBar Material Theme -->
     <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/blueGrey900</item>
+        <item name="colorPrimary">@color/darkGreen</item>
         <item name="colorPrimaryDark">@color/blueGrey500</item>
-        <item name="colorAccent">@color/dullBlack</item>
+        <item name="colorAccent">@color/whiteTheme</item>
+        <item name="android:textColorPrimary">@color/whiteTheme</item>
     </style>
 
     <!-- ActionBar Material Theme -->
@@ -24,8 +25,15 @@
         <item name="colorAccent">@color/whiteTheme</item>
     </style>
 
+    <!-- Preference Screen Theme -->
+    <style name="PreferenceScreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/blueGrey900</item>
+        <item name="android:textColor">@color/blueGrey900</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
 </resources>

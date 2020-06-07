@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".UI.JobDetails"
+    android:background="@color/blueGrey700"
     tools:showIn="@layout/activity_job_details">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
